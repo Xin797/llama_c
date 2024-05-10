@@ -54,7 +54,7 @@ def main(
 
     These are just basic steps to get you started. Cooking Italian pasta can be a fun and rewarding experience.""",
             },
-            {"role": "user", "content": "What is the best type of pasta for a creamy sauce?"}
+            {"role": "user", "content": "What is the first step in making pasta?"}
         ],
     ]
     results = generator.chat_completion(
