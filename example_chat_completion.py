@@ -57,9 +57,6 @@ def main(
             {"role": "user", "content": "What are the benefits of practicing yoga regularly?"},
         ],
         [
-            {"role": "system", "content": "How can I improve my time management skills at work?"},
-        ],
-        [
             {"role": "user", "content": "Can you recommend some must-read books for entrepreneurs?"},
             {
                 "role": "assistant",
