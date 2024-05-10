@@ -40,51 +40,21 @@ def main(
     )
 
     dialogs: List[Dialog] = [
-        [{"role": "user", "content": "how to lead a team on a project?"}],
         [
-            {"role": "user", "content": "What are some famous landmarks in Japan?"},
+            {"role": "user", "content": "I want to learn how to cook Italian pasta, can you help me?"},
             {
                 "role": "assistant",
                 "content": """\
-    Japan is home to many iconic landmarks that attract tourists from all over the world. Here are some famous landmarks in Japan:
+    Italian pasta is a delicious and versatile dish that you can easily make at home. Here are some basic steps to help you learn how to cook Italian pasta:
+    1. Choose the right type of pasta
+    2. Boil water and cook pasta
+    3. Make a sauce
+    4. Combine pasta and sauce
+    5. Garnish and serve
 
-    1. Mount Fuji: This majestic and iconic mountain is the highest peak in Japan and a symbol of the country.
-    2. Tokyo Tower: A prominent landmark in Tokyo, this communications and observation tower offers panoramic views of the city.
-    3. Kyoto's Kiyomizu-dera Temple: A historic temple with a stunning wooden stage that offers picturesque views of Kyoto.
-
-    These are just a few examples of the many famous landmarks that Japan has to offer.""",
+    These are just basic steps to get you started. Cooking Italian pasta can be a fun and rewarding experience.""",
             },
-            {"role": "user", "content": "What are the benefits of practicing yoga regularly?"},
-        ],
-        [
-            {"role": "user", "content": "Can you recommend some must-read books for entrepreneurs?"},
-            {
-                "role": "assistant",
-                "content": """\
-    Reading is a great way to enhance your entrepreneurial skills and knowledge. Here are some must-read books for entrepreneurs:
-
-    1. "The Lean Startup" by Eric Ries: This book introduces the concept of lean methodology and is essential for any startup founder.
-    2. "The Innovator's Dilemma" by Clayton Christensen: A classic that explores disruptive innovation and its impact on businesses.
-    3. "Shoe Dog" by Phil Knight: The memoir of the Nike founder offers valuable insights into building a successful business.
-
-    These books cover a range of important topics for entrepreneurs and are highly recommended reads.""",
-            },
-            {"role": "user", "content": "What are the best ways to stay productive while working from home?"},
-        ],
-        [
-            {"role": "user", "content": "What are some traditional customs and festivals in India?"},
-            {
-                "role": "assistant",
-                "content": """\
-    India is known for its rich cultural heritage and vibrant festivals. Here are some traditional customs and festivals in India:
-
-    1. Diwali: Also known as the Festival of Lights, Diwali is one of the most important Hindu festivals celebrated with fireworks, sweets, and decorations.
-    2. Holi: Known as the Festival of Colors, Holi is a lively celebration where people throw colored powders and water at each other in a joyous atmosphere.
-    3. Navratri: A nine-night festival dedicated to the worship of the Hindu goddess Durga, Navratri features traditional dance performances and music.
-
-    These are just a few examples of the colorful customs and festivals that showcase India's cultural diversity.""",
-            },
-            {"role": "user", "content": "What are some key tips for taking great photographs?"},
+            {"role": "user", "content": "What is the best type of pasta for a creamy sauce?"}
         ],
     ]
     results = generator.chat_completion(
